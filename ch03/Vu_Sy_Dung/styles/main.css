@@ -1,0 +1,36 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* So the HTML5 structural tags work in older browsers */
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/* the styles for the elements */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+}
+
+/* the styles for the container */
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 1em;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+header,
+section,
+footer {
+  margin: 1em 0;
+}

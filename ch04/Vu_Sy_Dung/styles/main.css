@@ -1,0 +1,74 @@
+/* So the HTML5 structural tags work in older browsers */
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+main {
+  display: block;
+}
+
+/* the styles for the elements */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+header,
+main,
+footer {
+  margin-left: 1.5em;
+}
+
+/* the styles for the header */
+header img {
+  float: left;
+}
+
+header h2 {
+  font-size: 170%;
+  color: #800000;
+  text-indent: 30px;
+}
+header h3 {
+  font-size: 130%;
+  font-style: italic;
+  text-indent: 30px;
+}
+
+.shadow {
+  text-shadow: 1px 1px 1px #800000;
+}
+
+/* the styles for the section */
+main {
+  clear: left;
+}
+h1 {
+  font-size: 150%;
+}
+
+section h2 {
+  font-size: 130%;
+  color: #800000;
+}
+
+section h3 {
+  font-size: 105%;
+}
+
+section h3 a:hover {
+  font-style: italic;
+}
+
+/* the styles for the footer */
+footer p {
+  text-align: center;
+}
