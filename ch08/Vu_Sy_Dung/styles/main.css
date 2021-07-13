@@ -1,0 +1,267 @@
+
+/* So the HTML5 structural tags work in older browsers */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+
+/* the styles for the elements */
+html {
+    background-color: #fff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 98%;     /*800px*/
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+.shadow {
+    text-shadow: 1px 0 0 #800000;
+}
+
+/* the styles for the header */
+header {
+    border-bottom: 3px solid #931420;
+    padding-bottom: 2em;
+    padding-top: 1.5em;
+    background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, #fff 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -moz-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, #fff 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header img {
+    float: left;
+    padding: 0 3.75px;
+    height: 80px;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+/* the style for navigation menu*/
+/* Exercise 7-1*/
+.slicknav_menu{
+    display: none;
+}
+nav .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+nav .nav>li {
+    float: left;
+    width: 20%;
+    height: 50px;
+    background-color: #800000;
+    /* transition: 0.8s ease; */
+}
+
+nav .nav>li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    line-height: 50px; 
+    color: #fff;
+    font-weight: bold;
+    /* margin: 7px 10px; */
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+nav .nav>li:hover > a {
+    color: #000;
+    background-color: #fff;
+}
+ .nav-menu {
+     position: relative;
+ }
+
+.menu {
+    display: none; 
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #800000;
+    
+
+}
+
+.nav-menu:hover .menu {
+    display: block;
+}
+
+.menu li:hover a {
+
+    color: #000;
+    background-color: #fff;
+}
+
+/* the styles for the section */
+main {
+
+}
+section {
+    /*clear: left;*/
+    width: 65.625%;    /*525*/
+    padding: 0 3.8% 20px;   /*20px*/
+    float: right;
+}
+
+section h2, aside h2 {
+    font-size: 130%;
+    color: #800000;
+    padding: .5em 0 .25em;
+}
+
+section p {
+    padding-bottom: .5em;
+}
+
+section blockquote {
+    padding: 0 2em;
+    font-style: italic;
+}
+
+article::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article {
+    padding: .5em 0;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+
+section h1 {
+    font-size: 150%;
+    padding: .5em 0 .25em;
+}
+article img{
+    float: right;
+    border: 1px solid black;
+    margin: 1em 0 1em 1em;
+    max-width: 35%;
+    min-width: 150px;
+}
+article h2{
+    padding-top: 0;
+}
+article h3{
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+section ul {
+    list-style: circle;
+    padding: 0 0 .25em 1.25em;
+}
+
+section ul > li {
+    padding-bottom: .35em;
+}
+
+aside {
+    width: 29.375%;
+    padding: 0 0 20px 2.5%;
+}
+
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+    /*margin-bottom: .25em;*/
+}
+
+aside a:hover, aside a:focus {
+    font-style: italic;
+}
+
+aside img {
+    padding-bottom: 1em;
+    width: 75px;
+    height: 75px;
+}
+
+/* the styles for the footer */
+footer {
+    clear: both;
+    background-color: #931420;
+    padding: 1em 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+/* Media Screen */
+@media screen and (max-width: 959px) {
+    section h1 {
+        font-size: 135%;
+    }
+
+    section h2, aside h2 {
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    header img {
+        float: none;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+    }
+    section {
+        float: none;
+        width: 95.8%;
+    }
+
+    article img {
+        max-width: 30%;
+        margin-left: 1em;
+    }
+
+    aside {
+        padding-right: 2.1%;
+        width: 95.8%;
+    }
+
+    aside div {
+        column-count: 2;
+    }
+}
+
+@media screen  and (max-width: 479px) {
+    body {
+        font-size: 90%;
+    }
+    .slicknav_menu{
+        background-color: #800000 !important;
+    }
+}
